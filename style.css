@@ -1,0 +1,113 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+/* all of this CSS styles the homepage */
+
+
+/* animation for everything on my page except my navigation bar */
+@keyframes page-load {
+    from {
+        opacity:0;
+        transform:rotateX(-10deg);
+    }
+
+    to {
+        opacity:1;
+        transform:rotateX(0);
+    }
+}
+
+body {
+    animation: page-load 0.75s;
+}
+
+nav {
+    display:flex;
+    justify-content:space-between;
+    margin-top:30px;
+    animation: nav 0.75s ease-in; /* this avtivates the animation */
+}
+
+nav a {
+    text-decoration:none;
+}
+
+.logo {
+    margin-left:50px;
+    color:black;
+    letter-spacing: 3px;
+    font-size:30px;
+    font-family: 'Jost', sans-serif;
+}
+
+nav ul li {
+    list-style:none;
+    display:inline-block;
+    margin-right:50px;
+    padding-top:10px;
+    font-weight:bold;
+    font-family: 'Montserrat', sans-serif;
+    color:black;
+    
+}
+
+nav ul li:hover {
+    color:#ffa58a;
+}
+
+
+.title {
+    margin-top:100px;
+    padding-left:50px;
+    font-size: 55px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    color:transparent;
+    -webkit-text-stroke:0.5px #ffa58a; /* adds the stroke to the transparent text */
+}
+
+.description {
+    padding-left:50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bold;
+    font-style:italic;
+}
+
+.image-and-description {
+    display:flex;
+    margin-top:80px;
+    background-color:#e8fbff;
+}
+
+#social-media {
+    background-color:#353535;
+}
+
+.social-media-links {
+    display:flex;
+    padding-top:20px;
+    padding-bottom:20px;
+    justify-content: space-between;
+    margin-right:400px;
+    margin-left:400px;
+}
+
+.social-media-links img {
+    width:40px;
+    height:40px;
+}
+
+#copyright {
+    text-align:center;
+    color:black;
+    font-family: 'montserrat', sans-serif;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color:#e8fbff;
+    font-weight:bold;
+}
+
+
+/* this next part of the CSS will style the about page */
